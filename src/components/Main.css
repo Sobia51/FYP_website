@@ -1,0 +1,396 @@
+  .NavSection {
+    margin-top: 0rem;
+    background-image: url("/public/images/Home-BG.png");
+    width: 100%;
+    height: clamp(40rem, 70vw, 70rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .NavSection .container {
+    position: absolute;
+    margin: 3rem;
+    width: auto;
+    max-width: 90rem;
+    z-index: 1;
+  }
+  
+  .NavSection .container .topnav {
+    overflow: hidden;
+    background-color: rgba(3, 19, 109, 0);
+  }
+  
+  /* Navbar links */
+  .NavSection .container .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .NavSection .container .topnav a:hover {
+    background-color: rgba(1, 33, 53, 0.671);
+    color: rgb(255, 255, 255);
+  }
+  
+  .NavSection .container .text {
+    margin-top: 6rem;
+  }
+  
+  .NavSection .container .text h1 {
+    text-align: left;
+    color: #f2f2f2;
+    font-size: clamp(2rem, 3vw, 6rem);
+    text-shadow: 0.2rem 0.6rem #3a3a3a79;
+  }
+  
+  .NavSection .container .sub-text {
+    width: 55rem;
+    float: left;
+    margin-top: 4rem;
+    color: #f2f2f2;
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+  
+  .NavSection .container .buttons {
+    margin-top: 16rem;
+    margin-left: 8rem;
+    height: 8rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .NavSection .container .buttons .button1 {
+    background-color: rgb(1, 33, 53);
+    font-size: clamp(0.5rem, 2.0vw, 2rem);
+    height: 5rem;
+    width: 16rem;
+    border: none;
+    color: rgb(253, 253, 253);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2.4rem;
+    margin-left: 1.875rem;
+  }
+  
+  .NavSection .container .buttons .button1:hover {
+    background-color: #f1f1f1bb;
+    color: rgb(2, 48, 107);
+  }
+  
+  .NavSection .container .buttons .button2 {
+    height: 5rem;
+    width: 16rem;
+    font-size: clamp(0.5rem, 2.0vw, 2rem);
+    background-color: rgb(245, 248, 250);
+    border: none;
+    color: rgb(2, 48, 107);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2.4rem;
+    margin-left: 1.875rem;
+  
+  }
+  
+  .NavSection .container .buttons .button2:hover {
+    background-color: #011b63b6;
+    color: blanchedalmond;
+  }
+  
+  
+  .cardSection {
+    background-color: #d0eeed;
+    padding-top: 7rem;
+    position: relative;
+  }
+  
+  .cardSection h1 {
+    color: rgb(20, 20, 61);
+    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+  
+  .flex-container .image img {
+    border-radius: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    background-color: #d0eeed;
+  }
+  
+  .image {
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 1rem 6rem -4rem 6rem;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background: #d0eeed;
+    -moz-border-radius: 6.5rem;
+    -webkit-border-radius: 6.5rem;
+    border-radius: 6.5rem;
+  
+  }
+  
+  .cards {
+    justify-content: center;
+    width: 35rem;
+    height: 28.4rem;
+    background-color: white;
+    border-radius: 5.2rem;
+    margin: 2rem;
+    box-shadow: 0rem 1.5rem 1rem rgb(148, 148, 148);
+  }
+  
+  .cards p {
+    margin-top: .8rem;
+    color: gray;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: .5rem 1.3rem 0rem 1.3rem;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  .cards h2 {
+    padding: 4.5rem 1.3rem .5rem 1.3rem;
+    text-align: center;
+    color: rgb(20, 20, 61);
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+  }
+  
+  .goalsSection {
+    background-color: #d0eeed;
+  }
+  
+  .goalsContainer {
+    /* margin-top: 4.0rem; */
+    padding-top: 3rem;
+    background-color: white;
+    width: 100%;
+    max-width: 140rem;
+  
+  }
+  
+  .goalsSection .goalsContainer .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .goalsSection .goalsContainer h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: clamp(2rem, 2.5vw, 4.5rem);
+  }
+  
+  .goalsContainer .flex-container img {
+    /* width: clamp(10rem, 40vw, 40rem); */
+    height: clamp(10rem, 50vw, 50rem);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .goalsContainer .flex-container .text-box {
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    max-width: 70rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+  
+  .goalsContainer .flex-container .text-box p {
+    font-size: clamp(1rem, 2.5vw, 3.5rem);
+    color: rgb(96, 95, 95);
+    text-align: left;
+  
+  }
+  
+  .imagesSection .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+  
+  .imagesSection .images-container .images img {
+    width: clamp(10rem, 30vw, 30rem);
+    height: clamp(10rem, 30vw, 30rem);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .img {
+    background-image: url("/public/images/img.jpg");
+    height: 100%;
+    filter: blur(0.3rem);
+    -webkit-filter: blur(0.3rem);
+    min-height: 64rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bg-text {
+    background-color: rgb(255, 253, 253);
+    background-color: rgba(255, 254, 254, 0.199);
+    transform: translate(0%, -130%);
+    z-index: 2;
+    width: 100%;
+    padding: 0.2rem;
+    text-align: center;
+  }
+  
+  .bg-text h1 {
+    color: rgb(2, 52, 85);
+    font-size: clamp(2rem, 4vw, 6rem);
+  }
+  
+  .bg-text p {
+    margin-top: 3rem;
+    color: white;
+    font-size: clamp(1.25rem, 2.0vw, 2.5rem);
+    line-height: 3.4rem;
+  }
+  
+  .bg-text .button {
+    margin-top: 3rem;
+    background-color: rgb(1, 55, 80);
+    color: white;
+    border: none;
+    font-size: clamp(0.5rem, 2.0vw, 2rem);
+    height: 5rem;
+    width: 19rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2.4rem;
+  }
+  
+  .text-container {
+    margin-top: -37rem;
+    width: 100%;
+    padding: 2.0rem;
+  }
+  
+  .text-container h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(2, 52, 85);
+    font-size: clamp(2rem, 3.5vw, 6rem);
+  }
+  
+  .text-container p {
+    line-height: 3rem;
+    margin-top: 3rem;
+    color: rgb(48, 47, 47);
+    font-size: clamp(1.25rem, 1.9vw, 2.5rem);
+    text-align: center;
+  
+  }
+  
+  .ReasonSection {
+    background-color: #d0eeed;
+    border-radius: 5.4rem;
+    margin-top: 3rem;
+  }
+  
+  .ReasonSection h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-weight: bold;
+  }
+  
+  .ReasonSection .flex-container .features-cards {
+    width: clamp(30rem, 50vw, 50rem);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 5.2rem;
+    margin: 3rem;
+    box-shadow: 0rem 1.5rem 1rem rgb(148, 148, 148);
+  }
+  
+  .ReasonSection .flex-container .features-cards h2 {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(20, 20, 61);
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+  }
+  
+  .ReasonSection .flex-container .features-cards .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .ReasonSection .flex-container .features-cards .content img {
+    float: left;
+    padding: 10px;
+    width: clamp(10rem, 13vw, 13rem);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .ReasonSection .flex-container .features-cards .content p {
+    font-size: clamp(1rem, 2.2vw, 2.2rem);
+    color: black;
+    margin: 2rem;
+    justify-content: center;
+    text-align: left;
+    width: clamp(10rem, 29vw, 29rem);
+  }
+  
+html {
+  font-size: 62.5%;
+}
+
+@media(max-width:998px) {
+  html {
+    font-size: 55%;
+  }
+
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 45%;
+  }
+
+}  
