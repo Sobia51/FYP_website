@@ -8,9 +8,8 @@ function Solution() {
             <h1>Fast and Reliable AI-based Accessibility Solution</h1>
         </div>
         <div className="sub-text">
-            WebAccessify provides accessibility features to people with disabilities by utilizing cutting-edge
-            AI
-            technologies powered by Machine Learning, Deep Learning, and Natural Language Processing.
+           <p> WebAccessify provides accessibility features to people with disabilities by utilizing cutting-edge
+            AI technologies powered by Machine Learning, Deep Learning, and Natural Language Processing.</p>
         </div>
     </section>
 

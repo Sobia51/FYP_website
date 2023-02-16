@@ -1,11 +1,13 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SignUpForm from './components/SignUp_Form';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Solution from './components/pages/Solution';
-import SignIn from './components/SignIn';
+import SignUpForm from './components/Signup/SignUp_Form';
+import Home from './pages/Home';
+import About from './pages/About';
+import Solution from './pages/Solution';
+import SignIn from './components/Signup/SignIn';
+import Contactus from './pages/Contactus';
+import Price from './pages/Price';
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
           <Route path='/sign-in' element={<SignIn/>} />
           <Route path='/About-us' element={<About/>} />
           <Route path='/Solution' element={<Solution/>} />
+          <Route path='/Contact-us' element={<Contactus/>} />
+          <Route path='/Pricing' element={<Price/>} />
         </Routes>
       </Router>
     </>

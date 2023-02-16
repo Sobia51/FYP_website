@@ -1,66 +1,60 @@
 import React from 'react';
 import './Main.css'
+import { Link } from 'react-router-dom';
 
 function Main() {
     return (
         <>
             <section className="NavSection">
                 <div className="container">
-                    {/* <div class="topnav">
-                <a href="index.html">HOME</a>
-                <a href="solution.html">SOLUTIONS</a>
-                <a href="#SERVICES">SERVICES</a>
-                <a href="#PRICING">PRICING</a>
-                <a href="About-us.html">ABOUT US</a>
-                <a href="/Contact-us.html">CONTACT US</a>
-            </div> */}
-                    <div className="text">
                         <h1>Fast Accessibility Solution<br /> For WCAG & ADA<br />Compliance</h1>
-                    </div>
-                    <div className="sub-text">
-                        Wide Web by people with physical disabilities, situational disabilities.
-                    </div>
+                        <p>Wide Web by people with physical<br/>
+                     disabilities,situational disabilities.</p> 
                     <div className="buttons">
+                        <Link to='/sign-up'>
                         <button className="button1">Free Trial</button>
+                        </Link> 
                         <button className="button2">Get Demo</button>
                     </div>
                 </div>
             </section>
             <section className="cardSection">
                 <h1>WEBACCESSIFY PROVIDES EASY ACCESSIBILITY</h1>
-                <div className="flex-container" style={{ marginTop: '8rem', }}>
+                <div className="flex-container">
                     <div className="cards">
-                        <div className="image" style={{ marginLeft: '11rem', marginTop: '-9rem', }}>
+                        <div className="image">
                             <img src="../images/card1-removebg-preview.png" alt="Avatar" />
+                            <h2>Compliance With WCAG & ADA </h2>
                         </div>
-                        <h2>WCAG and ADA Compliance</h2>
+                      
                         <p>WebAccessify is the platform that helps you to overcome digital barriers and get WCAG and ADA
                             Compliance easily from our best accessibility solutions.</p>
                     </div>
                     <div className="cards">
-                        <div className="image" style={{ marginLeft: '12rem', marginTop: '-9rem', }}>
+                        <div className="image">
                             <img src="../images/card2.png" alt="Avatar" />
+                            <h2>Reduce Legal Risks</h2>
                         </div>
-                        <h2>Reduce Legal Risks</h2>
-                        <p>WebAccessify improves your site’s accessibility, user experience, and usability. Easily navigate with
-                            voice Navigation to improve accessibility for all users including those who are blind or visually
-                            impaired while boosting SEO. </p>
-                    </div>
-                    <div className="cards">
-                        <div className="image" style={{ marginLeft: '12rem', marginTop: '-9rem', }}>
-                            <img src="../images/card3-removebg-preview.png" alt="Avatar" />
-                        </div>
-                        <h2>Improve Usability and UI/UX</h2>
                         <p>Risk Mitigation to avoid lawsuits related to web accessibility is essential. WebAccessify can help
                             organizations of all sizes stay compliant with web accessibility standards, ensuring they are not
-                            exposed to legal risk as a result.</p>
+                            exposed to legal risk as a result.
+                        </p>
+                    </div>
+                    <div className="cards">
+                        <div className="image">
+                            <img src="../images/card3-removebg-preview.png" alt="Avatar" />
+                            <h2>Improve Usability & UI/UX</h2>
+                        </div>
+                        <p>WebAccessify improves your site’s accessibility, user experience, and usability. Easily navigate with
+                            voice Navigation to improve accessibility for all users including those who are blind or visually
+                            impaired while boosting SEO.</p>
                     </div>
                 </div>
             </section>
             <section className="goalsSection">
                 <div className="goalsContainer">
                     <h1>Web Accessibility for All, regardless of Ability</h1>
-                    <div className="flex-container">
+                    <div className="Img-container">
                         <img src="./images/Key.png" alt="" />
                         <div className="text-box">
                             <p>We understand that accessibility is something that should be cared about and that’s why we make

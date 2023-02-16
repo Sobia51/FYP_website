@@ -1,7 +1,7 @@
 import React from 'react'
-import Features from '../Features'
-import Footer from '../Footer'
-import Navbar from '../Navbar'
+import Features from '../components/FeatureComponents/Features'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 const Solution = () => {
   return (
     <>

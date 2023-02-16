@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Box, TextField, Button, FormControlLabel, Checkbox } from '@mui/material'
+const formControlLabelStyle = {
+  "& .MuiFormControlLabel-label": {
+    fontSize: "clamp(1rem,1.2vw,1.2rem)",
+    // width: 300,
+  }
+}
 const SignUp_Form = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
@@ -74,25 +80,26 @@ const SignUp_Form = () => {
 
   useEffect(() => {
     checkValidation();
-  }, [name,email,password,companyName,url]);
+  }, [name, email, password, companyName, url]);
 
   return (
     <section className="Container" style={{
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      height: '100%',
+      height: '100vh',
       backgroundImage: 'url(../images/bg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       padding: '2rem'
     }}>
       <Box
-      component={'form'}
+        component={'form'}
         position={'relative'}
         display='flex'
         maxWidth={500}
         flexDirection={'column'}
+        float={'left'}
         margin={3}
         padding={3}
         justifyContent={'center'}
@@ -113,8 +120,8 @@ const SignUp_Form = () => {
           fontSize: '2.3rem',
         }}>Register for WebAccessify</h1>
         <p style={{
-          margin: '0rem 0rem 1rem 18rem',
-          fontSize: '1.3rem',
+          margin: '0rem 0rem 1rem 17rem',
+          fontSize: '1.5rem',
         }}>
           Already have an account?
           <Link to="/sign-in">
@@ -157,7 +164,7 @@ const SignUp_Form = () => {
           fullWidth
           variant='outlined'
           id="companyName"
-          label="companyName"
+          label="CompanyName"
           name="companyName"
           autoComplete="companyName"
           autoFocus
@@ -198,8 +205,7 @@ const SignUp_Form = () => {
         <FormControlLabel
           control={<Checkbox value="allowExtraEmails" color="primary" />}
           label="I agree to the WebAccessify Terms of Use, Cookie Policy and Privacy Statement"
-          inputProps={{ style: { fontSize: '1.4rem' } }} // font size of input text
-          InputLabelProps={{ style: { fontSize: '2rem' } }}
+          sx={{...formControlLabelStyle}}
           style={{
             marginTop: '1rem',
           }} />
@@ -209,8 +215,8 @@ const SignUp_Form = () => {
           variant="contained"
           style={{
             margin: '1.2rem',
-            width: 'clamp(10rem, 13vw, 13rem)',
-            height: 'clamp(2rem, 4vw, 4rem)',
+            width: 'clamp(13rem, 13vw, 13rem)',
+            height: 'clamp(4rem, 4vw, 4rem)',
             backgroundColor: '#122a5e',
             color: '#fff',
             fontSize: '1.5rem'

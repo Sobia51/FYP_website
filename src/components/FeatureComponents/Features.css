@@ -3,10 +3,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: clamp(40rem, 70vw, 70rem);
+    width: 100vw;
+    height: clamp(10rem, 70vw, 70rem);
+    /* height: 80vh; */
     position: relative;
     object-fit: cover;
+    /* overflow: hidden; */
   }
   .Solution .text {
     margin-left: 4rem;
@@ -20,27 +22,29 @@
     font-size: clamp(2rem, 3vw, 6rem);
     width: clamp(20rem, 60vw, 60rem);
   }
-  
-  .Solution .sub-text {
-    float: left;
-    margin: 6rem 0rem 0rem 4rem;
-    color: #1B2D55;
-    font-size: clamp(1.6rem, 2vw, 3rem);
-    width: clamp(20rem, 80vw, 80rem);
+  .Solution .sub-text{
+    width: clamp(25rem,50vw,70rem);
+    margin: 4rem 0rem 0rem 4rem;
     text-align: justify;
+  }
+  .Solution .sub-text p{
+    color: #1B2D55;
+    font-size: clamp(1.35rem, 2vw, 3rem);
   }
   
   .solutionDisability {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .solutionDisability .solution-text h1 {
     margin-top: 2rem;
     text-align: center;
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 4rem);
     color: #122a5e;
   }
   
@@ -54,16 +58,12 @@
   .solutionDisability .Text h1 {
     font-size: clamp(1rem, 3vw, 3rem);
     width: clamp(10rem, 70vw, 70rem);
-    margin: 3rem;
+    margin: 1rem;
     color: #122a5e;
   }
   
   .solutionDisability .cards-box {
     margin-top: 3rem;
-    background-image: url(/public/images/bg1.png);
-    background-size: 100rem 90rem;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -71,7 +71,7 @@
   }
   
   .solutionDisability .cards-box .solutionCards {
-    background-color: #018e877d;
+    /* background-color: #018e877d; */
     width: clamp(40rem, 60vw, 60rem);
     margin: 3rem;
     justify-content: center;
@@ -159,7 +159,6 @@
     background-color: white;
     color: #1B2D55;
     margin: 3rem;
-    border: 2px solid black;
     border-radius: 2.2rem;
   }
   

@@ -30,11 +30,15 @@ const pages =
             {
                 name: 'Contact us',
                 path: '/Contact-us'
+            },
+            {
+                name: 'Pricing',
+                path: '/Pricing'
             }
         ];
 
     const settings = ['Profile', 'Account', 'Logout'];
-const ResponsiveAppBar=()=> {
+    const ResponsiveAppBar=()=> {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -54,7 +58,7 @@ const ResponsiveAppBar=()=> {
     };
     return (
         <AppBar position="static">
-            <Container maxWidth="xl" style={{
+            <Container maxWidth="l" style={{
                 backgroundColor: 'rgb(20, 20, 61)',
             }}>
                 <Toolbar disableGutters>
@@ -67,7 +71,6 @@ const ResponsiveAppBar=()=> {
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
-                            //   fontFamily: 'monospace',
                             fontWeight: 700,
                             fontSize: '2rem',
                             letterSpacing: '.3rem',
@@ -146,7 +149,7 @@ const ResponsiveAppBar=()=> {
                                     margin: '2rem',
                                     textDecoration: 'none',
                                     fontWeight: 'bold',
-                                    fontSize: '1.9rem' 
+                                    fontSize: '2.5rem' 
                                 }}>
                                     {page.name}
                                 </Link>
@@ -190,66 +193,3 @@ const ResponsiveAppBar=()=> {
     );
 }
 export default ResponsiveAppBar;
-
-
-
-
-
-
-
-// import {Link} from 'react-router-dom';
-// export default function App() {
-//     const pages =
-//         [
-//             {
-//                 name: 'Home',
-//                 path: '/'
-//             },
-//             {
-//                 name: 'Solution',
-//                 path: '/Solution'
-//             },
-//             {
-//                 name: 'About us',
-//                 path: '/About-us'
-//             },
-//             {
-//                 name: 'Contact us',
-//                 path: '/Contact-us'
-//             },
-//         ];
-
-//     const obj = {
-//         id: 4,
-//         name: 'Dean',
-//         country: 'Denmark',
-//     };
-
-//     return (
-//         <div>
-//             {pages.map((page, index) => {
-//                 return (
-//                     <div key={index}>
-//                         {/* <h2>name: {page.name}</h2>
-//                         <h2>country: {page.country}</h2> */}
-//                         <Link to={page.path}>
-//                             {page.name}
-//                         </Link>
-//                         <hr />
-//                     </div>
-//                 );
-//             })}
-
-//             <hr />
-//             <hr />
-//             <hr />
-
-//             <div>
-//                 <h2>name: {obj.name}</h2>
-//                 <h2>county: {obj.country}</h2>
-//             </div>
-
-//             <hr />
-//         </div>
-//     );
-// }

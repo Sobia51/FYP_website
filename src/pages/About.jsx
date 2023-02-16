@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../Footer'
-import Navbar from '../Navbar'
-import Timeline from '../Timeline'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import Timeline from '../components/Timeline'
 const About = () => {
   return (
     <>

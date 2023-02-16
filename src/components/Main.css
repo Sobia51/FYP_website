@@ -1,78 +1,53 @@
   .NavSection {
-    margin-top: 0rem;
     background-image: url("/public/images/Home-BG.png");
     width: 100%;
-    height: clamp(40rem, 70vw, 70rem);
+    height: clamp(35rem, 54vw, 70rem);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     object-fit: cover;
+    position: relative;
   }
   
   .NavSection .container {
-    position: absolute;
-    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0rem 3rem 3rem 3rem;
     width: auto;
-    max-width: 90rem;
+    height: auto;
     z-index: 1;
   }
   
-  .NavSection .container .topnav {
-    overflow: hidden;
-    background-color: rgba(3, 19, 109, 0);
-  }
-  
-  /* Navbar links */
-  .NavSection .container .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1.4rem 1.6rem;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .NavSection .container .topnav a:hover {
-    background-color: rgba(1, 33, 53, 0.671);
-    color: rgb(255, 255, 255);
-  }
-  
-  .NavSection .container .text {
-    margin-top: 6rem;
-  }
-  
-  .NavSection .container .text h1 {
+  .NavSection .container h1 {
+    margin-top: 8rem;
     text-align: left;
     color: #f2f2f2;
     font-size: clamp(2rem, 3vw, 6rem);
     text-shadow: 0.2rem 0.6rem #3a3a3a79;
   }
   
-  .NavSection .container .sub-text {
-    width: 55rem;
+  .NavSection .container p{
     float: left;
-    margin-top: 4rem;
+    margin-top: clamp(1rem, 4vw,5rem);
     color: #f2f2f2;
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(2rem, 3vw, 4rem);
   }
   
   .NavSection .container .buttons {
-    margin-top: 16rem;
-    margin-left: 8rem;
-    height: 8rem;
+    margin-top: clamp(1rem, 4vw,5rem);
+    margin-left: 6rem;
     width: 40rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   .NavSection .container .buttons .button1 {
     background-color: rgb(1, 33, 53);
     font-size: clamp(0.5rem, 2.0vw, 2rem);
-    height: 5rem;
-    width: 16rem;
+    height: clamp(4rem,5vw,5rem);
+    width: clamp(11rem,16vw,16rem);
     border: none;
     color: rgb(253, 253, 253);
     padding: 1rem;
@@ -90,8 +65,8 @@
   }
   
   .NavSection .container .buttons .button2 {
-    height: 5rem;
-    width: 16rem;
+    height: clamp(4rem,5vw,5rem);
+    width: clamp(11rem,16vw,16rem);
     font-size: clamp(0.5rem, 2.0vw, 2rem);
     background-color: rgb(245, 248, 250);
     border: none;
@@ -115,12 +90,11 @@
   .cardSection {
     background-color: #d0eeed;
     padding-top: 7rem;
-    position: relative;
   }
   
   .cardSection h1 {
     color: rgb(20, 20, 61);
-    font-size: clamp(2rem, 2.5vw, 4.5rem);
+    font-size: clamp(1.7rem, 3vw, 4.5rem);
     text-align: center;
   }
   
@@ -131,66 +105,56 @@
     justify-content: space-around;
     padding: 4rem;
   }
+    
+
   
-  .flex-container .image img {
-    border-radius: 0.8rem;
-    padding: 1rem;
-    width: 100%;
-    max-width: 10rem;
-    height: auto;
-    background-color: #d0eeed;
-  }
-  
-  .image {
-    padding: 3rem 2rem 2rem 2rem;
-    margin: 1rem 6rem -4rem 6rem;
-    position: absolute;
-    width: 12rem;
-    height: 12rem;
-    background: #d0eeed;
-    -moz-border-radius: 6.5rem;
-    -webkit-border-radius: 6.5rem;
-    border-radius: 6.5rem;
-  
-  }
-  
-  .cards {
-    justify-content: center;
-    width: 35rem;
-    height: 28.4rem;
+  .flex-container .cards {
+    width: clamp(25rem,40vw,40rem);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     border-radius: 5.2rem;
     margin: 2rem;
     box-shadow: 0rem 1.5rem 1rem rgb(148, 148, 148);
   }
   
-  .cards p {
+  .flex-container .cards p {
     margin-top: .8rem;
     color: gray;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    padding: .5rem 1.3rem 0rem 1.3rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    padding: 2rem;
     text-align: left;
-    justify-content: center;
   }
-  
-  .cards h2 {
-    padding: 4.5rem 1.3rem .5rem 1.3rem;
+  .flex-container .cards .image {
+    margin: 3rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     text-align: center;
-    color: rgb(20, 20, 61);
-    font-size: clamp(1rem, 2.5vw, 2.5rem);
   }
+
+  .flex-container .cards .image h2 {
+    color: rgb(20, 20, 61);
+    font-size: clamp(1rem, 3vw, 3.5rem);
+  }
+
+  .flex-container .cards .image img {
+    width: 100%;
+    margin: 1rem;
+    max-width: clamp(3rem,4vw,6rem);
+    height: auto;
+  }
+
   
   .goalsSection {
     background-color: #d0eeed;
   }
   
   .goalsContainer {
-    /* margin-top: 4.0rem; */
     padding-top: 3rem;
-    background-color: white;
-    width: 100%;
-    max-width: 140rem;
-  
+    background-color: white; 
   }
   
   .goalsSection .goalsContainer .flex-container {
@@ -206,25 +170,30 @@
     margin-top: 2rem;
     font-size: clamp(2rem, 2.5vw, 4.5rem);
   }
-  
-  .goalsContainer .flex-container img {
-    /* width: clamp(10rem, 40vw, 40rem); */
-    height: clamp(10rem, 50vw, 50rem);
+  .goalsContainer .Img-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .goalsContainer img {
+    height: clamp(10rem, 40vw, 50rem);
     -webkit-box-sizing: border-box;
+    /* border: 2px solid rebeccapurple; */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   
-  .goalsContainer .flex-container .text-box {
-    margin-top: 3rem;
-    position: relative;
+  .goalsContainer .Img-container .text-box {
+    margin-top: 5rem;
     width: 100%;
-    max-width: 70rem;
     height: auto;
-    padding: 1.5rem;
+    /* border: 2px solid rebeccapurple; */
+    padding: 2.5rem;
   }
   
-  .goalsContainer .flex-container .text-box p {
+  .goalsContainer .Img-container .text-box p {
     font-size: clamp(1rem, 2.5vw, 3.5rem);
     color: rgb(96, 95, 95);
     text-align: left;
@@ -249,10 +218,10 @@
   
   .img {
     background-image: url("/public/images/img.jpg");
-    height: 100%;
+    height: clamp(47rem,40vw,60rem);
     filter: blur(0.3rem);
     -webkit-filter: blur(0.3rem);
-    min-height: 64rem;
+    /* min-height: 64rem; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,6 +236,7 @@
     width: 100%;
     padding: 0.2rem;
     text-align: center;
+    position: absolute;
   }
   
   .bg-text h1 {
@@ -298,7 +268,7 @@
   }
   
   .text-container {
-    margin-top: -37rem;
+    margin-top: 2rem;
     width: 100%;
     padding: 2.0rem;
   }
@@ -307,15 +277,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(2, 52, 85);
-    font-size: clamp(2rem, 3.5vw, 6rem);
+    color: rgb(30, 30, 83);
+    font-size: clamp(2rem, 4vw, 6rem);
   }
   
   .text-container p {
-    line-height: 3rem;
+    line-height: clamp(1.5rem,2.5vw,3rem);
     margin-top: 3rem;
     color: rgb(48, 47, 47);
-    font-size: clamp(1.25rem, 1.9vw, 2.5rem);
+    font-size: clamp(1.25rem, 1.9vw,3rem);
     text-align: center;
   
   }
@@ -355,7 +325,7 @@
   
   .ReasonSection .flex-container .features-cards .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
   }
   
@@ -369,7 +339,7 @@
   }
   
   .ReasonSection .flex-container .features-cards .content p {
-    font-size: clamp(1rem, 2.2vw, 2.2rem);
+    font-size: clamp(1rem, 2.8vw, 3rem);
     color: black;
     margin: 2rem;
     justify-content: center;
